@@ -19,8 +19,8 @@ const HeaderWrapper = styled.div`
 
 const Header = () => (
 <HeaderWrapper>
-     <img src={logo} className='App-logo' alt='logo' />
-     <h1>My Github Porfolio</h1>
+  <Logo src={logo} alt='logo' />
+  <h1>My Github Porfolio</h1>
 </HeaderWrapper>
 
 );
