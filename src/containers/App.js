@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import Profile from './Profile';
 import Header from '../components/Header/Header';
 import logo from '../logo.svg';
-import './App.css';
+
+const AppWrapper = styled.div`
+  text-align: center;
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <AppWrapper>
         <Header logo={logo} />
         <Profile />
-      </div>
+      </AppWrapper>
     );
   }
 }

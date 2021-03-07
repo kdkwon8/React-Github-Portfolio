@@ -1,15 +1,19 @@
 import React from 'react';
-import './Link.css';
+import styled from 'styled-components';
+
+
+const Innerlink = styled.a`
+    color: #61dafb;
+    `;
 
 const Link = ({ url, title }) => (
-    <a
-        className='App-link'
+    <Innerlink
         href={url}
         target='_blank'
         rel='noopener noreferrer'    
     >
         {title}
-    </a>
+    </Innerlink>
 );
 
 export default Link;
